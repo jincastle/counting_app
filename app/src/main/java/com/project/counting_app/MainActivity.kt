@@ -15,13 +15,15 @@ class MainActivity : AppCompatActivity() {
         val resetButton = findViewById<Button>(R.id.resetButton)
         val plusButton = findViewById<Button>(R.id.plusButtonView)
 
-        var number = 0
+        val saveState = Bundle()
 
+        var number = 0
 
         resetButton.setOnClickListener {
             number=0
             numberTextView.text = number.toString()
             Log.i("onClick","리셋 된 숫자는 $number")
+
         }
 
         plusButton.setOnClickListener{

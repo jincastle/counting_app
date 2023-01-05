@@ -15,8 +15,6 @@ class MainActivity : AppCompatActivity() {
         val resetButton = findViewById<Button>(R.id.resetButton)
         val plusButton = findViewById<Button>(R.id.plusButtonView)
 
-        val saveState = Bundle()
-
         var number = 0
 
         resetButton.setOnClickListener {
